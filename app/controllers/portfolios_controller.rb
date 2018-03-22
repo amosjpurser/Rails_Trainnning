@@ -37,6 +37,10 @@ def edit
     end
   end
 
+	def show
+		@portfolios_item = Portfolio.find(params[:id])
+	end	
+
 end
 
 
