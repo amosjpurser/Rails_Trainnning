@@ -64,7 +64,7 @@ class BlogTestsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog_test
-      @blog_test = BlogTest.find(params[:id])
+			@blog_test = BlogTest.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
